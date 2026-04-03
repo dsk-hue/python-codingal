@@ -14,3 +14,12 @@ print("Data type of is_student:", type(is_student))
 
 print("Weight:", weight)
 print("Data type of weight:", type(weight))
+
+print("Some type casting")
+age=str(age)
+print(age)
+
+weight=int(weight)
+print(weight)
+
+print(f"Data type of weight after type casting: {type(weight)}")
