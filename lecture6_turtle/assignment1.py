@@ -19,9 +19,11 @@ for i in sentences:
     new_sentences.append(i)
 word_count = 0
 def finding_word(word):
-    for x in sentences:
-        for l in [0, len(new_sentences[x])]:
-            if word in l:
+    global word_count
+    for x in new_sentences:
+        words = x.split()
+        for w in words:
+            if w == word:
                 word_count += 1
 
 finding_word("python")
